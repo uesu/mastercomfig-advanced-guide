@@ -34,7 +34,7 @@ killstreaks=off // disable killstreak banner
 
 - autoexec is a config file where scripts,
     - binds and commands can be placed to run each time you start `TF2`
-      - simply put what `scripts, binds, and commands` you want to use on `autoexec.cfg`. 
+      - simply put what `scripts, binds, and commands` you want to use on `autoexec.cfg`
 
 `example cfg`:
 https://github.com/uesu/cfg/blob/master/user/autoexec.cfg
