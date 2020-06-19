@@ -42,7 +42,7 @@ https://github.com/uesu/cfg/blob/master/user/autoexec.cfg
 `template`:
 https://github.com/mastercomfig/mastercomfig/releases/latest/download/template.cfg
 
-* `note`: this affects all class, take a look at my `config` and it might give you some ideas on what to put into your `autoexec.cfg`. if you would like to have more customizations to be placed on your `autoexec.cfg`, download the `template`
+* `note`: this affects all class, take a look at my `cfg` and it might give you some ideas on what to put into your `autoexec.cfg`. if you would like to have more customizations to be placed on your `autoexec.cfg`, download the `template`
 
 # gameoverrides
 
