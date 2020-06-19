@@ -80,7 +80,7 @@ on the `gameoverrides.cfg` and it will not run when changing other class
 
 **more example:**
 
-* `blocky-textures w/ null-movement` on `scout.cfg`
+* `blocky-lightmaps w/ null-movement` on `scout.cfg`
 
 ```
 mat_filterlightmaps 1
@@ -110,7 +110,7 @@ bind "a" "+moveleft" //default "+moveleft"
 bind "s" "+back" //default "+back"
 bind "d" "+moveright" //default "+moveright"
 ```
-* now `blocky-textures w/ null-movement` will not be executed when changing other class
+* now `blocky-lightmaps w/ null-movement` will not be executed when changing other class
 
 #
 
