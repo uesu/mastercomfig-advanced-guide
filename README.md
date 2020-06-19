@@ -42,15 +42,15 @@ https://github.com/uesu/cfg/blob/master/user/autoexec.cfg
 `template`:
 https://github.com/mastercomfig/mastercomfig/releases/latest/download/template.cfg
 
-* `note`: this affects all classes, such as using a `crouch jump script`, meaning that the script or bind will use it for `all classes`, so make sure you put the script or bind to the specified `class.cfg` that you only want to work and that the rest is not affected by using `gameoverrides.cfg`
+* `note`: this affects all class, take a look at my `config` and it might give you some ideas on what to put into your `autoexec.cfg`. if you would like to have more customizations to be placed on your `autoexec.cfg`, download the `template`
 
 # gameoverrides
 
 - `unsets / unbinds itself`
   - example if you are using `crouch jump script` on `soldier.cfg`
-       - but don't want to use the script on `other class` you can use `gameoverrides.cfg` to unbind the script
-        
-* The only thing you should put on `gameoverrides.cfg` is the `default keys`
+    - but don't want to use the script on `other class` you can use `gameoverrides.cfg` to unbind the script
+
+* `note`: if the `script or bind` is for this `class only`, example = `scout`, you should put it on `scout.cfg` and then reset the `key` by putting the `default tf2 key` to `gameoverrides.cfg`. if it is for `all classes`, put the script on `gameoverrides.cfg` example = `quick switch loadout`
 
 https://wiki.teamfortress.com/wiki/List_of_default_keys
 
@@ -121,9 +121,7 @@ tips
 * `view file name extensions and hidden items`
 
 
-
 ![intro](https://github.com/uesu/advanced-guide/blob/master/image.png)
-
 
 
 * `edit cfg`
