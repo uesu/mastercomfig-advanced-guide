@@ -74,7 +74,7 @@ bind space +jump
 
 on the `gameoverrides.cfg` and it will not run when changing other class
 
-`video example:` https://youtu.be/DussnNwmgfo
+`video example:` https://youtu.be/DussnNwmgfo ; https://youtu.be/RbB29yptKVw
 
 * `game_overrides.cfg` will execute first before the class file, which means the `script` will always happen afterwards and every other class change will re-bind to `+jump`
 
