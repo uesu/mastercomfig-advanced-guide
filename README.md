@@ -112,6 +112,26 @@ bind "d" "+moveright" //default "+moveright"
 ```
 * now `blocky-lightmaps w/ null-movement` will not be executed when changing other class
 
+# pre-comfig
+
+- pre_comfig modifies the `preset level`
+    - which means you can change to `low preset` when you are using a `high preset`
+        - to activate it, remove `//`
+
+* you may need to use `modules.cfg` on `very low` to allow `killfeed, messages, sheens etc.`
+
+* preset names
+```
+ultra
+high
+medium-high
+medium
+medium-low
+low
+very-low
+```
+* example = `alias preset"exec presets/low.cfg"` on the `pre_comfig.cfg`
+
 #
 
 <h4 align="center">
