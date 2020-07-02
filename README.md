@@ -47,7 +47,7 @@ https://github.com/mastercomfig/mastercomfig/releases/latest/download/autoexec_t
 # gameoverrides
 
 - `unsets / unbinds itself`
-  - example if you are using `crouch jump script` on `soldier.cfg`
+  - example if you are using a `crouch jump script` on `soldier.cfg`
     - but don't want to use the script on `other class` you can use `gameoverrides.cfg` to unbind the script
 
 * `note`: if the `script or bind` is for this `class only`, example = `scout`, you should put it on `scout.cfg` and then reset the `key` by putting the `default tf2 key` to `gameoverrides.cfg`. if it is for `all classes`, put the script on `gameoverrides.cfg` example = `quick switch loadout`
