@@ -2,7 +2,7 @@
 advanced-guide
 </h1>
 
-<p>this guide should help people how to use modules, autoexec and gameoverrides.
+<p>this guide should help people how to use modules, autoexec, gameoverrides and pre-comfig.
 </p>
 
 <p>support <a href="https://github.com/mastercoms">mastercoms</a>
