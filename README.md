@@ -50,9 +50,9 @@ https://github.com/mastercomfig/mastercomfig/releases/latest/download/autoexec_t
 
 # gameoverrides
 
-* this unsets or unbinds itself, for example, if you are using a crouch jump script on soldier but you don't want to use the script on the other class you can use game_overrides to unbind the script.
+* this unsets or unbinds itself, for example, if you are using a crouch jump script on soldier but you don't want to use the script on the other class you can use **game_overrides** to unbind the script.
 
-* if the script or bind is for this class only, example = scout, you should put it on scout.cfg and use game_overrides to place the default tf2 key to it
+* if the script or bind is for this class only (example = scout) you should put it on **scout.cfg** and use game_overrides to place the default tf2 key to it
 
 https://wiki.teamfortress.com/wiki/List_of_default_keys
 
