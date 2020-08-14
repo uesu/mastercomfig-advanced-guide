@@ -10,55 +10,59 @@ advanced-guide
 
 # modules
 
-- modules are used for setting quality levels in presets, 
-    - and can also be used in the `tf/cfg/user/modules.cfg` file to easily 
-        - customize your config without searching for individual console variable values
+* modules are used to customize the settings in your preset that you can modify or change the way your preset behaves like **fps cap** that you can change your fps to cap your frame rate or unrestrict it. 
 
-* first, go to https://docs.mastercomfig.com/en/latest/customization/modules/ and find the list of modules that you want to put in the `modules.cfg`
+* you should read the [docs modules](https://docs.mastercomfig.com/en/latest/customization/modules/) and here you can see the list of modules that are available and their functionality. after you have found what you want to edit, open **modules.cfg** and remove `//` slashes and edit.
 
-* navigate to `tf/cfg/user/modules.cfg`
+**before**
 
-* once you've found what you want to add, just copy the `highlighted module command` and paste it to `modules.cfg`
-    
-**example:**
+```````
+//messages=on
+// on, hide, off
+```````
 
-```
-messages=enable // enables all text messages
-killfeed=on // enables killfeed
-killstreaks=off // disable killstreak banner
-```
+**after**
 
-* `note`: update the modules if it is renamed!
+``````
+messages=hide
+// on, hide, off
+``````
+
+the on, hide, off is your choice whether you want it on, hide it, or just disable it.
+
+**note**: update the modules if it is renamed!
 
 # autoexec
 
-- autoexec is a config file where scripts,
-    - binds and commands can be placed to run each time you start `TF2`
-      - simply put what `scripts, binds, and commands` you want to use on `autoexec.cfg`
+* autoexec is a config file where scripts, binds or commands can be placed to run each time you start TF2.
 
-`example cfg`:
+what does an autoexec config look like?
+
+here's an example of what an autoexec config look like (autoexec does not look all the same, it is based on your own preference).
 https://github.com/uesu/cfg/blob/master/user/autoexec.cfg
 
-`template`:
+where do i start to make my own autoexec config?
+
+there is a template to help you make your own autoexec config.
 https://github.com/mastercomfig/mastercomfig/releases/latest/download/autoexec_template.cfg
 
-* `note`: this affects all class, take a look at my `cfg` and it might give you some ideas on what to put into your `autoexec.cfg`. if you would like to have more customizations to be placed on your `autoexec.cfg`, download the `template`
+**note**: this affects all class.
 
 # gameoverrides
 
-- `unsets / unbinds itself`
-  - example if you are using a `crouch jump script` on `soldier.cfg`
-    - but don't want to use the script on `other class` you can use `gameoverrides.cfg` to unbind the script
+* this unsets or unbinds itself, for example, if you are using a crouch jump script on soldier but you don't want to use the script on the other class you can use game_overrides to unbind the script.
 
-* `note`: if the `script or bind` is for this `class only`, example = `scout`, you should put it on `scout.cfg` and then reset the `key` by putting the `default tf2 key` to `gameoverrides.cfg`. if it is for `all classes`, put the script on `gameoverrides.cfg` example = `quick switch loadout`
+* if the script or bind is for this class only, example = scout, you should put it on scout.cfg and use game_overrides to place the default tf2 key to it
 
 https://wiki.teamfortress.com/wiki/List_of_default_keys
 
 https://wiki.teamfortress.com/w/images/c/c8/Config_default.cfg.txt
 
-**example:**
+* if it is for all class, put the script on game_overrides (example = quick switch loadout)
 
-* `crouch jump script` on `soldier.cfg`:
+**example 1**:
+
+* crouch jump script on soldier:
 
 ```
 alias +crouchjump "+duck; +jump"
@@ -72,15 +76,15 @@ bind "space" "+crouchjump"
 bind space +jump
 ```
 
-on the `gameoverrides.cfg` and it will not run when changing other class
+on game_overrides and it will not run when changing other class
 
-`video example:` https://youtu.be/DussnNwmgfo ; https://youtu.be/RbB29yptKVw
+video example: https://youtu.be/DussnNwmgfo ; https://youtu.be/RbB29yptKVw
 
-* `game_overrides.cfg` will execute first before the class file, which means the `script` will always happen afterwards and every other class change will re-bind to `+jump`
+**note**: game_overrides will execute first before the class file, which means the **script** will always happen afterwards and every other class change will re-bind to **+jump**
 
-**more example:**
+**example 2:**
 
-* `blocky-lightmaps w/ null-movement` on `scout.cfg`
+* blocky-lightmaps w/ null-movement on scout:
 
 ```
 mat_filterlightmaps 1
@@ -105,20 +109,18 @@ alias cright
 * simply put:
 ```
 mat_filterlightmaps 1
-bind "w" "+forward" //default "+forward"
-bind "a" "+moveleft" //default "+moveleft"
-bind "s" "+back" //default "+back"
-bind "d" "+moveright" //default "+moveright"
+bind w "+forward"
+bind a "+moveleft"
+bind s "+back"
+bind d "+moveright"
 ```
-* now `blocky-lightmaps w/ null-movement` will not be executed when changing other class
+* now blocky-lightmaps w/ null-movement will not be executed when changing other class
 
 # pre-comfig
 
-- pre_comfig modifies the `preset level`
-    - which means you can change to `low preset` when you are using a `high preset`
-        - to activate it, remove `//`
+* pre_comfig can change your preset to high, medium or low without downloading a medium, high or low preset 
 
-* you may need to use `modules.cfg` on `very low` to allow `killfeed, messages, sheens etc.`
+* you may need to use modules on **very low** to allow killfeed, messages and sheens
 
 * preset names
 ```
@@ -130,7 +132,7 @@ medium-low
 low
 very-low
 ```
-* example = `alias preset"exec presets/low.cfg"` on the `pre_comfig.cfg`
+* example = `alias preset"exec presets/low.cfg"`
 
 #
 
@@ -138,12 +140,12 @@ very-low
 tips
 </h4>
 
-* `view file name extensions and hidden items`
+* view file name extensions and hidden items
 
 
 ![intro](https://github.com/uesu/advanced-guide/blob/master/image.png)
 
 
-* `edit cfg`
+* edit cfg
 
 https://notepad-plus-plus.org/downloads/
