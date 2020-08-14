@@ -30,8 +30,6 @@ messages=hide
 
 the on, hide, off is your choice whether you want it on, hide it, or just disable it.
 
-**note**: update the modules if it is renamed!
-
 # autoexec
 
 * autoexec is a config file where scripts, binds or commands can be placed to run each time you start TF2.
