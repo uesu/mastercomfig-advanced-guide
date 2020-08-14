@@ -50,13 +50,11 @@ https://github.com/mastercomfig/mastercomfig/releases/latest/download/autoexec_t
 
 * this unsets or unbinds itself, for example, if you are using a crouch jump script on soldier but you don't want to use the script on the other class you can use **game_overrides** to unbind the script.
 
-* if the script or bind is for this class only (example = scout) you should put it on **scout.cfg** and use game_overrides to place the default tf2 key to it
+* if the script or bind is for this class only (example = scout) you should put it on **scout.cfg** and use game_overrides to place the default tf2 key to it. if it is for all class, put the script on game_overrides (example = quick switch loadout).
 
 https://wiki.teamfortress.com/wiki/List_of_default_keys
 
 https://wiki.teamfortress.com/w/images/c/c8/Config_default.cfg.txt
-
-* if it is for all class, put the script on game_overrides (example = quick switch loadout)
 
 **example 1**:
 
@@ -68,17 +66,17 @@ alias -crouchjump "-jump; -duck"
 bind "space" "+crouchjump"
 ```
 
-* just put:
+just put:
 
 ```
 bind space +jump
 ```
 
-on game_overrides and it will not run when changing other class
+on game_overrides and it will not run when changing other class.
 
 video example: https://youtu.be/DussnNwmgfo ; https://youtu.be/RbB29yptKVw
 
-**note**: game_overrides will execute first before the class file, which means the **script** will always happen afterwards and every other class change will re-bind to **+jump**
+**note**: game_overrides will execute first before the class file, which means the **script** will always happen afterwards and every other class change will re-bind to **+jump**.
 
 **example 2:**
 
@@ -104,7 +102,7 @@ alias cleft
 alias cright
 ```
 
-* simply put:
+simply put:
 ```
 mat_filterlightmaps 1
 bind w "+forward"
@@ -112,15 +110,13 @@ bind a "+moveleft"
 bind s "+back"
 bind d "+moveright"
 ```
-* now blocky-lightmaps w/ null-movement will not be executed when changing other class
+now blocky-lightmaps w/ null-movement will not be executed when changing other class.
 
 # pre-comfig
 
-* pre_comfig can change your preset to high, medium or low without downloading a medium, high or low preset 
+* pre_comfig can change your preset to high, medium or low without downloading a medium, high or low preset. you may need to use modules on **very low** to allow killfeed, messages and sheens.
 
-* you may need to use modules on **very low** to allow killfeed, messages and sheens
-
-* preset names
+preset names:
 ```
 ultra
 high
@@ -130,7 +126,7 @@ medium-low
 low
 very-low
 ```
-* example = `alias preset"exec presets/low.cfg"`
+example = `alias preset"exec presets/low.cfg"`
 
 #
 
