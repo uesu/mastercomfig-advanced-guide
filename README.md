@@ -126,7 +126,7 @@ medium-low
 low
 very-low
 ```
-example = `alias preset"exec presets/low.cfg"`
+example = `preset=very-low`
 
 #
 
