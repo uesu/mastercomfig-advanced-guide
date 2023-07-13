@@ -37,7 +37,7 @@ the on, hide, off is your choice whether you want it on, hide it, or just disabl
 what does an autoexec config look like?
 
 here's an example of what an autoexec config look like (autoexec does not look all the same, it is based on your own preference).
-https://github.com/uesu/cfg/blob/master/user/autoexec.cfg
+https://github.com/uesu/uesu-tf2-cfg/blob/master/overrides/autoexec.cfg
 
 where do i start to make my own autoexec config?
 
